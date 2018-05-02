@@ -9,39 +9,25 @@
 
 <section class="section">
   <div class="container">
-    <table class="table is-fullwidth is-stripped">
+    <table class="table is-fullwidth is-striped is-narrow">
       <thead>
         <th>Foto</th>
         <th>Nombre</th>
-        <th>País</th>
         <th>Ciudad</th>
         <th>Correo</th>
         <th>Teléfono</th>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
+        <tr *ngFor="let user of users">
+          <td>
+            <figure class="image is-48x48">
+              <img [src]="user.picture.thumbnail">
+            </figure>
+          </td>
+          <td class="is-capitalized">{{ user.name.first }} {{ user.name.last }}</td>
+          <td class="is-capitalized">{{ user.location.city }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phone }}</td>
         </tr>
       </tbody>
     </table>
