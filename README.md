@@ -46,9 +46,26 @@ ng serve -o
 
 > El argumento `-o` o `--open` abre automanticamente la pestaña del proyecto en el navegador predeterminado.
 
+## Bulma.io
+
+https://bulma.io/
+
+## GitHub Pages
+
+Ejecutar el comando:
+
+```shell
+npm run ghpages
+```
+
 ---
 
 ## Recursos
 
+- [Node](https://nodejs.org/es/)
 - [Angular QuickStart](https://angular.io/guide/quickstart)
 - [Angular CLI](https://cli.angular.io/)
+- [Angular HttpClient](https://angular.io/guide/http)
+- [Random Users Service](https://randomuser.me/)
+- [Bulma.io](https://bulma.io/)
+- [Deploy to GitHub Pages](https://github.com/angular/angular-cli/wiki/stories-github-pages)
